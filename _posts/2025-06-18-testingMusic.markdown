@@ -5,27 +5,35 @@ date:   2025-06-18 22:32:17 -0500
 categories: test
 ---
 
+This post tests out music playing in the background.
 
-This post tests out music playing in the background
 
-<div id="music-control" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
-  <img id="mute-btn" src="/assets/img/sound-on.png" alt="Toggle sound" style="width: 40px; cursor: pointer;">
+<div id="music-control" style="text-align: left; padding: 10px 20px 0 0;">
+  <img id="mute-btn" src="/assets/img/sound-on.png" alt="Toggle sound" style="width: 128px; cursor: pointer;">
 </div>
 
-<audio id="bg-music" autoplay loop muted>
+
+<audio id="bg-music" autoplay loop>
   <source src="/assets/audio/Tyler.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
 <script>
-  const audio = document.getElementById('bg-music');
-  const muteBtn = document.getElementById('mute-btn');
-  let isMuted = true;
+  document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('bg-music');
+    const muteBtn = document.getElementById('mute-btn');
 
-  // Unmute when user clicks
-  muteBtn.addEventListener('click', () => {
-    isMuted = !isMuted;
-    audio.muted = isMuted;
-    muteBtn.src = isMuted ? '/assets/img/Sign.png' : '/assets/img/Franklin.png';
+    if (audio && muteBtn) {
+      let isMuted = false;
+
+      // Sync initial button image
+      muteBtn.src = isMuted ? '/assets/img/sound-off.png' : '/assets/img/sound-on.png';
+
+      muteBtn.addEventListener('click', () => {
+        isMuted = !isMuted;
+        audio.muted = isMuted;
+        muteBtn.src = isMuted ? '/assets/img/sound-off.png' : '/assets/img/sound-on.png';
+      });
+    }
   });
 </script>
