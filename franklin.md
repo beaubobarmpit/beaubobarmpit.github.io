@@ -1,7 +1,8 @@
 ---
 layout: page
-title: "More Info About Tyler"
+title: "More Info About Franklins Lava Loco Rescue"
 permalink: /franklin/
+nav_exclude = true
 ---
 
 🐒🔥 Franklin’s Lava Loco Rescue🔥🐒 
@@ -58,9 +59,9 @@ E to grind on rails when closeby
 
 
 
-<a href="/assets/games/FranklinGame.png" download>Download Tyler Game (ZIP)</a>
+<a href="/assets/games/FranklinsLavaLoco.zip" download>Download Franklins Lava Loco Rescue (ZIP)</a>
 
-
+once you download, unzip the downloaded file and double-click FranklinsLavaLoco.exe to run
 
 
 
