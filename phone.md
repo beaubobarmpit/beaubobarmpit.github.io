@@ -11,11 +11,10 @@ permalink: /mirror/
 <script>
 document.getElementById("openBtn").onclick = () => {
   const popup = window.open(
-    "https://www.google.com",
+    "https://www.duckduckgo.com",
     "_blank",
     "width=1000,height=700,resizable=yes,scrollbars=yes"
   );
-  // Focus the popup window
   if (popup) popup.focus();
 };
 </script>
