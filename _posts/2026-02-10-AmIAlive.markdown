@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Check on me here"
+date: 2026-02-10 20:10:17 -0500
+categories: website
+---
+
+Wondering if im alive? [Check Here!](https://beaubock.us/amialive/).
